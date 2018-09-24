@@ -12,6 +12,7 @@ RUN apk --update add --no-cache \
     # NodeJS + NPM
     nodejs \
     npm \
+    yarn \
     # Chromium + Chrome driver
     chromium \
     chromium-chromedriver \
