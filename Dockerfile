@@ -1,5 +1,8 @@
 FROM jenkins/slave:alpine
 
+# Upgrade permissions
+USER root
+
 # Install required packages
 ##############################
 
@@ -34,3 +37,6 @@ RUN find /usr/local \
       -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
       -exec rm -rf '{}' + \
     && rm -rf /var/cache/apk/*
+
+# Downgrade permissions
+USER ${user}
