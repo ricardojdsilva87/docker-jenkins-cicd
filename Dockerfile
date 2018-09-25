@@ -42,7 +42,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # Move to the root home directory
     && cd \
     # Install AWS CLI
-    && pip install awscli
+    && pip install --no-cache-dir awscli
 
 # Cleanup
 #########
