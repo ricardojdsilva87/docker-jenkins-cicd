@@ -1,4 +1,4 @@
-FROM jenkins/slave:alpine
+FROM jenkins/jnlp-slave:alpine
 
 # Upgrade permissions
 USER root
