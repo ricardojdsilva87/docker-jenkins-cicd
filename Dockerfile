@@ -47,7 +47,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Cleanup
 #########
 
-RUN rm -rf /var/lib/apt/lists/*
+RUN find /usr/local \
+        \( -type d -a -name test -o -name tests \) \
+        -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
+        -exec rm -rf '{}' + \
+    && rm -rf /var/lib/apt/lists/*
 
 # Downgrade permissions
 USER ${user}
