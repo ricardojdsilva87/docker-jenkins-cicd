@@ -1,5 +1,9 @@
 FROM jenkins/jnlp-slave
 
+# Required Environment variables
+ENV CHROME_BIN /usr/bin/chromium
+ENV CHROMEDRIVER_BIN /usr/bin/chromedriver
+
 # Upgrade permissions
 USER root
 
