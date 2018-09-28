@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zip \
     unzip \
     curl \
+    rsync \
     # AWS CLI requirement
     python \
     python-setuptools \
