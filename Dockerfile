@@ -55,4 +55,4 @@ RUN find /usr/local \
     && rm -rf /var/lib/apt/lists/*
 
 # Downgrade permissions
-USER ${user}
+USER jenkins
