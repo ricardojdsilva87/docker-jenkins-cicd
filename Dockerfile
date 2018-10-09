@@ -38,6 +38,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python-setuptools \
     python-wheel \
     python-pip \
+    # Source code building ( node-gyp, etc. )
+    build-essential \
     # Cloudfoundry CLI
     && curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&source=github" | tar -zx \
     && mv cf /usr/local/bin \
