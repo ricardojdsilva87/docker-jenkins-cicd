@@ -1,4 +1,4 @@
-FROM jenkins/jnlp-slave
+FROM jenkins/jnlp-slave:3.26-1
 
 # Required Environment variables
 ENV CHROME_BIN /usr/bin/chromium
