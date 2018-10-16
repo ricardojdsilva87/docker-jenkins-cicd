@@ -45,6 +45,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&source=github" | tar -zx \
     && mv cf /usr/local/bin \
     && chmod +x /usr/local/bin/cf \
+    # Akamai CLI
+    && curl -L "https://github.com/akamai/cli/releases/download/1.0.2/akamai-1.0.2-linuxamd64" -o /usr/local/bin/akamai \
+    && chmod +x /usr/local/bin/akamai \
     # Move to the root home directory
     && cd \
     # Install AWS CLI
