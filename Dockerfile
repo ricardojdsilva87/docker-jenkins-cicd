@@ -48,6 +48,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # Akamai CLI
     && curl -L "https://github.com/akamai/cli/releases/download/1.0.2/akamai-1.0.2-linuxamd64" -o /usr/local/bin/akamai \
     && chmod +x /usr/local/bin/akamai \
+    # Akamai purge CLI
+    && curl -L "https://github.com/akamai/cli-purge/releases/download/1.0.0/akamai-purge-1.0.0-linuxamd64" -o /usr/local/bin/akamai-purge \
+    && chmod +x /usr/local/bin/akamai-purge \
     # Move to the root home directory
     && cd \
     # Install AWS CLI
