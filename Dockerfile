@@ -25,6 +25,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # Chromium + Chrome driver
     chromium \
     chromium-driver \
+    # browser driver testing stuff 
+    xvfb \
     # SVN
     git-svn \
     subversion \
