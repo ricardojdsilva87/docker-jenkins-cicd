@@ -25,9 +25,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # Chromium + Chrome driver
     chromium \
     chromium-driver \
-    # browser driver testing stuff 
-    xvfb \
-    libgconf2-4 \
+    # cypress dependencies
+    xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 \
     # SVN
     git-svn \
     subversion \
