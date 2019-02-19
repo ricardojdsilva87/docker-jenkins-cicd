@@ -43,6 +43,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python-pip \
     # Source code building ( node-gyp, etc. )
     build-essential \
+    # Installing Puppet
+    rubygems \
+    && gem install puppet-lint \
+    && wget -P /tmp/ https://pm.puppet.com/pe-client-tools/2019.0.2/19.0.3/repos/deb/bionic/PC1/pe-client-tools_19.0.3-1bionic_amd64.deb \
+    && apt install /tmp/pe-client-tools_19.0.3-1bionic_amd64.deb \
     # Cloudfoundry CLI
     && curl -L "https://packages.cloudfoundry.org/stable?release=linux64-binary&source=github" | tar -zx \
     && mv cf /usr/local/bin \
