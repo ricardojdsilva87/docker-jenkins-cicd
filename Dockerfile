@@ -36,6 +36,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     rsync \
     jq \
+    git-crypt \
     # AWS CLI requirement
     python \
     python-setuptools \
