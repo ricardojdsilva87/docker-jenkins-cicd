@@ -63,7 +63,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # Move to the root home directory
     && cd \
     # Install AWS CLI
-    && pip install --no-cache-dir awscli
+    && pip install --no-cache-dir awscli \
     # yamllint
     && pip install --no-cache-dir yamllint
 
