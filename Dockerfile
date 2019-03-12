@@ -36,6 +36,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     rsync \
     jq \
+    # yamllint
+    yamllint \
+    # puppet
+    puppet \
     # AWS CLI requirement
     python \
     python-setuptools \
