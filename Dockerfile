@@ -36,8 +36,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     rsync \
     jq \
-    # yamllint
-    yamllint \
     # puppet
     puppet \
     # AWS CLI requirement
@@ -66,6 +64,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && cd \
     # Install AWS CLI
     && pip install --no-cache-dir awscli
+    # yamllint
+    && pip install --no-cache-dir yamllint
 
 # Cleanup
 #########
